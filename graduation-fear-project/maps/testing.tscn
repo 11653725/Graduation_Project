@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://2pd00svugu12"]
+
+[ext_resource type="Texture2D" uid="uid://5gwthwfng235" path="res://textures/templategrid_albedo.png" id="1_2ay1s"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bkb2n"]
+albedo_texture = ExtResource("1_2ay1s")
+uv1_scale = Vector3(5, 5, 5)
+
+[node name="Testing" type="Node3D" unique_id=1411678220]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=320595369]
+material_override = SubResource("StandardMaterial3D_bkb2n")
+size = Vector3(15, 0.001, 15)
